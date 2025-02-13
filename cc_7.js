@@ -49,7 +49,9 @@ console.log(`Task 3 part 1: discounted price: $${calculateLoyaltyDiscount(100, 6
 console.log(`Task 3 part 2: discounted price: $${calculateLoyaltyDiscount(200, 2).toFixed(2)}`); 
 //logged the discounted prices
 
-//task 4
+
+
+// Task 4 - Product Shipping Cost Calculation
 function calculateShippingCost(weight, location, expedited = false) {
     let Cost = 0; 
 //created a fucntion to calculate the shipping costs
@@ -72,3 +74,16 @@ console.log(`Task 4 part 1: Shipping Cost: $${calculateShippingCost(10, "USA", t
 console.log(`Task 4 part 2: Shipping Cost: $${calculateShippingCost(5, "Canada", false).toFixed(2)}`);
 
 // logged the shipping costs for the two locations 
+
+
+// Task 5 - Business Loan Interest Calculation
+
+function calculateLoanInterest(principal, rate, years) {
+    let interest = principal * rate * years;
+    return interest;
+}
+//made a function that calculates loan interests based on the formula 
+
+console.log(`Task 5 part 1: total interest: $${calculateLoanInterest(1000, 0.05, 3).toFixed(2)}`);
+console.log(`Task 5 part 2: Total Interest: $${calculateLoanInterest(5000, 0.07, 5).toFixed(2)}`);
+//logged total interests
