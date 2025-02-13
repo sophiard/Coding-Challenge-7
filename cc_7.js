@@ -99,5 +99,20 @@ function getHighValueTransactions(transactions) {
 }
 //made a function that will return any orders abive 1000
 
-console.log("Task 7 - high value transactions:", getHighValueTransactions(transactions));
+console.log("Task 6 - high value transactions:", getHighValueTransactions(transactions));
 // logged task 6 of high value transactions 
+
+// Task 7 - Budget Tracker
+function createBudgetTracker() {
+    let budget = 0;
+    return function(expense) {
+        budget = budget - expense;
+        return budget;
+    };
+}
+//created a budget tracker that returns budget amount
+
+let tracker = createBudgetTracker();
+console.log(`Task 7 total 1- Current Balance: $${tracker(300)}`); 
+console.log(`Task 7 total 2- Current Balance: $${tracker(200)}`); 
+//logged the current balance 
