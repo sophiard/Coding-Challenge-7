@@ -87,3 +87,17 @@ function calculateLoanInterest(principal, rate, years) {
 console.log(`Task 5 part 1: total interest: $${calculateLoanInterest(1000, 0.05, 3).toFixed(2)}`);
 console.log(`Task 5 part 2: Total Interest: $${calculateLoanInterest(5000, 0.07, 5).toFixed(2)}`);
 //logged total interests
+
+
+// Task 6 - Filtering High-Value Transactions
+
+let transactions = [500, 1200, 3000, 800, 2200];
+//declared my transactions 
+
+function getHighValueTransactions(transactions) {
+    return transactions.filter(transaction => transaction > 1000);
+}
+//made a function that will return any orders abive 1000
+
+console.log("Task 7 - high value transactions:", getHighValueTransactions(transactions));
+// logged task 7 of high value transactions 
