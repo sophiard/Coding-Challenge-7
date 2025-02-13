@@ -48,3 +48,27 @@ const calculateLoyaltyDiscount = (amount, years) => {
 console.log(`Task 3 part 1: discounted price: $${calculateLoyaltyDiscount(100, 6).toFixed(2)}`); 
 console.log(`Task 3 part 2: discounted price: $${calculateLoyaltyDiscount(200, 2).toFixed(2)}`); 
 //logged the discounted prices
+
+//task 4
+function calculateShippingCost(weight, location, expedited = false) {
+    let Cost = 0; 
+//created a fucntion to calculate the shipping costs
+
+    if (location === "USA") {
+        Cost = 5 + (0.5 * weight);
+    } else if (location === "Canada") {
+        Cost = 10 + (0.7 * weight);
+    }
+
+    if (expedited === true) { 
+        Cost = Cost + 10;
+    }
+
+    return Cost; 
+}
+// created if else statement that take the location and calculates the shipping costs based on weight 
+
+console.log(`Task 4 part 1: Shipping Cost: $${calculateShippingCost(10, "USA", true).toFixed(2)}`);
+console.log(`Task 4 part 2: Shipping Cost: $${calculateShippingCost(5, "Canada", false).toFixed(2)}`);
+
+// logged the shipping costs for the two locations 
