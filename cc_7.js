@@ -100,4 +100,4 @@ function getHighValueTransactions(transactions) {
 //made a function that will return any orders abive 1000
 
 console.log("Task 7 - high value transactions:", getHighValueTransactions(transactions));
-// logged task 7 of high value transactions 
+// logged task 6 of high value transactions 
