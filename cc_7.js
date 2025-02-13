@@ -25,3 +25,26 @@ console.log("Task 2 Wage 1:", calculateHourlyWage(52000, 40));
 
 console.log("Task 2 Wage 2:", calculateHourlyWage(75000, 35)); 
 //log hourly wages 
+
+//Task 3
+
+const calculateLoyaltyDiscount = (amount, years) => {
+    let discount = 0;
+// made an arrow cunction that helps calculate the discounted price
+
+    if (years >= 5) {
+        discount = 0.15;
+    } else if (years >= 3) {
+        discount = 0.10;
+    } else {
+        discount = 0.05;
+    }
+
+    return amount - (amount * discount);
+};
+
+//the if else statemtns help deterime what discount is applied
+
+console.log(`Task 3 part 1: discounted price: $${calculateLoyaltyDiscount(100, 6).toFixed(2)}`); 
+console.log(`Task 3 part 2: discounted price: $${calculateLoyaltyDiscount(200, 2).toFixed(2)}`); 
+//logged the discounted prices
