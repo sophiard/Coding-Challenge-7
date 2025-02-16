@@ -116,3 +116,19 @@ let tracker = createBudgetTracker();
 console.log(`Task 7 total 1- Current Balance: $${tracker(300)}`); 
 console.log(`Task 7 total 2- Current Balance: $${tracker(200)}`); 
 //logged the current balance 
+
+
+//Task 8 - Business Growth Projection.
+function calculateGrowth(years, revenue) {
+    if (years === 10) {
+        return revenue;
+    }
+//created a function cslculate growth that takes in year and revenues to get expected revenue
+    revenue = revenue * 1.05; 
+    years = years + 1; 
+    return calculateGrowth(years, revenue);
+}// formula so that it calculated all the years remaining 
+
+console.log(`Task 8 part 1- Projected Revenue: $${calculateGrowth(8, 1000).toFixed(2)}`);
+console.log(`Task 8 part 2- Projected Revenue: $${calculateGrowth(5, 5000).toFixed(2)}`);
+//logged the results for task 8 
